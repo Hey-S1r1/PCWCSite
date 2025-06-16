@@ -6,7 +6,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="test.php" method="get">
+    <form action="login.php" method="get">
         <label>Email:</label><br>
         <input type="text" name="email"><br>
     </form>

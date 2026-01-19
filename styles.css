@@ -1,0 +1,25 @@
+.feature {
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    width:75%;
+    top: 20%;
+    left:5%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position:relative;
+}
+
+#form_div {
+    width:50%;
+    top: 20%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position:relative;
+}
+
+#showcase_header {
+    position: relative;
+    width: 100%;
+    border-bottom: 5px solid black;
+}

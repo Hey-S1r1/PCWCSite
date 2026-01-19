@@ -1,3 +1,4 @@
+<?php include "navbar.php"?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,22 +9,9 @@
     </head>
     <body>
       <div class="container-fluid">
-        <nav id="homeNav" class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Purdue Creative Writing Club</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link disabled" href="index.php">Home<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="about.php">About</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <?php if (isset($_SESSION["message"])) : ?>
+          <h5 class="alert alert-success"><?= $_SESSION["message"]; ?></h5>
+        <?php unset($_SESSION["message"]); endif; ?>
         <div class="jumbotron">
           <h1>Welcome to the Purdue Creative Writing Club's Website!</h1>
           <p>We hope you enjoy your stay.</p>

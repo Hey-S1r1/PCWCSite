@@ -1,0 +1,13 @@
+TODO
+
+important:
+better UI
+rate limit on submissions
+replace weird pdf storage thing with blob storage
+email confirmation on form
+
+less important:
+sort and search
+archive
+admin account?
+proper documentation lol

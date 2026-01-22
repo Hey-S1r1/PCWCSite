@@ -24,8 +24,8 @@
                         ?>
                             <div class="feature">
                                 <!-- When deploying, replace with links to blob in cloud -->
-                                <h3><a class="nav-link active" href="<?= $row->link?>"><?= $row->title; ?></a></h3>
-                                <h4>By <?= $row->author?></h4>
+                                <h3><a class="nav-link active" href="story.php?link=<?= $row->link; ?>&title=<?= $row->title; ?>&author=<?= $row->author; ?>"><?= $row->title; ?></a></h3>
+                                <h4>By <?= $row->author; ?></h4>
                                 <p>Description: <?= $row->description?></p>
                                 <?php if(empty($row->content_warnings))
                                     { echo ("<p>Content Warnings: None</p>");}
